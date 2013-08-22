@@ -1,0 +1,35 @@
+# Jack
+- model: auth.user
+  pk: 1
+  fields:
+    username: jack
+- model: deepselectrelated.Staff
+  pk: 1
+  fields:
+    name: Jack
+- model: deepselectrelated.StaffUser
+  pk: 1
+  fields:
+    staff: 1
+
+# Jill
+- model: auth.user
+  pk: 2
+  fields:
+    username: jill
+- model: deepselectrelated.Staff
+  pk: 2
+  fields:
+    name: Jill
+- model: deepselectrelated.StaffUser
+  pk: 2
+  fields:
+    staff: 2
+
+# Task
+- model: deepselectrelated.task
+  pk: 1
+  fields:
+    title: Test Task
+    creator: 1
+    owner: 2
