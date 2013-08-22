@@ -12,7 +12,7 @@ When using select_related on a deeply nested relationship and you have two (or p
 relationships that use the same model the SQL query is incorrect and thus
 the resulting model incorrect. 
 
-This has been created as [https://code.djangoproject.com/ticket/20955#ticket issue #20955 in Django].
+This has been created as Django issue #20955 - see https://code.djangoproject.com/ticket/20955#ticket
 
 ## Example
 
