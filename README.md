@@ -2,7 +2,7 @@
 
 The purpose of this repo is to show a potential issue of Django's select_related 
 queryset method. This maybe perhaps due to the slightly odd schema implementation however
-either way the behavior is unexpected.
+either way the behaviour is unexpected.
 
 I've done my testing on the (as of writing) latest django master (sha c5f768f8cc53a54686bcb1867cc4400393427ffe)
 
@@ -11,6 +11,8 @@ I've done my testing on the (as of writing) latest django master (sha c5f768f8cc
 When using select_related on a deeply nested relationship and you have two (or possibly more)
 relationships that use the same model the SQL query is incorrect and thus
 the resulting model incorrect. 
+
+This has been created as [https://code.djangoproject.com/ticket/20955#ticket issue #20955 in Django].
 
 ## Example
 
